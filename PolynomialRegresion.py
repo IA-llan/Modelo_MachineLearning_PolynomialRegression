@@ -1,7 +1,6 @@
 # Importando as bibliotecas
 
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 
 # Importando o dataset e classificando as variaveis em dependentes e independentes
@@ -10,7 +9,7 @@ dataset = pd.read_csv('C:/Users/allan/OneDrive/Área de Trabalho/Udemy - Curso/P
 x = dataset.iloc[:, 1:-1].values
 y = dataset.iloc[:, -1].values
 
-# Treinando um modelo linear regression  em todo o dataset
+# Treinando um modelo linear regression em todo o dataset, para que seja feita uma comparacao mais para frente
 
 from sklearn.linear_model import LinearRegression
 lin_reg = LinearRegression()
